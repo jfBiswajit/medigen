@@ -1,0 +1,429 @@
+:root {
+  --primary: #2C81BA;
+  --secondary: #57606f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#logo {
+  font-family: 'Lobster';
+  font-size: 2.8rem;
+}
+
+#logo .first {
+  color: white;
+}
+
+
+#logo .second {
+  color: white;
+}
+
+#main-nav {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+#main-nav li {
+  list-style: none;
+  padding: 0.5rem;
+  margin: 0.6rem 0 0 0.6rem;
+}
+
+#main-nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+#hero-img {
+  height: 100vh;
+  min-width: 100%;
+  background: linear-gradient(#297fb9, #297fb963),
+    url("../img/banners/1.jpg") no-repeat center;
+}
+
+#hero-text {
+  margin: 10rem;
+  text-align: center;
+}
+
+#hero-img .title {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+#hero-img .subtitle {
+  color: rgba(255, 255, 255, 0.911);
+  margin: 2rem auto;
+  width: 50%;
+  word-wrap: break-word;
+}
+
+#hero-img .hero-btn {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #EE5A24;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#hero-img .hero-btn:hover {
+  background: #ffa602de;
+}
+
+/* welcome section */
+.section-intro {
+  width: 80vh;
+  margin: 0 auto;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.section-intro h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #2f3640;
+}
+
+.section-intro p {
+  color: var(--secondary);
+}
+
+.welcome-card {
+  display: flex;
+  width: 80vw;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.welcome-card .thumbnail {
+  width: 50%;
+  height: 100%;
+}
+
+.welcome-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.welcome-card .text {
+  background: var(--primary);
+  padding: 4rem;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: white;
+}
+
+.welcome-card .text h2 {
+  margin-bottom: 1rem;
+}
+
+.welcome-card .text p {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Why choos us */
+#why-choose-us {
+  background: #ecf0f1;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#why-choose-us .services {
+  display: flex;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+#why-choose-us .services>* {
+  width: 21.25vw;
+  margin-right: 5vw;
+}
+
+#why-choose-us .services>*:last-child {
+  margin-right: 0;
+}
+
+#why-choose-us .services .item img {
+  background: rgba(78, 171, 233, 0.424);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+#why-choose-us .services .item h4 {
+  padding: 1rem 0.5rem;
+}
+
+#why-choose-us .services .item p {
+  font-size: 0.9rem;
+}
+
+/* Main appoinment */
+#make-appoinment form {
+  width: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#make-appoinment form>* {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+}
+
+#make-appoinment form>*:last-child {
+  margin-bottom: 0;
+  background: var(--primary);
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+#make-appoinment form>*:last-child:hover {
+  background: #1e6797;
+}
+
+/* Quote */
+#quote {
+  margin-top: 4rem;
+  background: linear-gradient(#000000c2, #000000c2),
+    url("../img/Doctors/doctor-team.jpg") no-repeat center;
+  color: rgba(255, 255, 255, 0.815);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 8rem;
+  background-attachment: fixed;
+}
+
+#quote h1 {
+  text-align: center;
+}
+
+/* Deaprtment */
+.slider-container {
+  width: 80vw;
+  margin: 0 auto;
+  /* height: 52vh; */
+}
+
+.slider ul {
+  width: 60%;
+}
+
+/* slider */
+.slider ul {
+  display: flex;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.slider ul li {
+  list-style: none;
+  cursor: pointer;
+  color: #297fb9
+}
+
+.slider ul li:last-child {
+  margin-right: 0;
+}
+
+.slider-active {
+  border-bottom: 3px solid #464646;
+}
+
+.slider {
+  /* height: 100%; */
+}
+
+.slider .slider-content {
+  display: flex;
+  /* height: 100% */
+}
+
+.slider .slider-content .text {
+  width: 40%;
+  /* height: 100%; */
+  padding: 2rem;
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.884);
+}
+
+.slider .slider-content .text h1 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.slider .slider-content .text p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-weight: 400;
+}
+
+.slider .slider-content .slider-btn {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background: white;
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.slider .slider-content .thumbnail {
+  width: 60%;
+  /* height: 100%; */
+}
+
+.slider .slider-content .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Team */
+#team {
+  background: #ecf0f1;
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.our-doctors {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.our-doctors .item {
+  position: relative;
+}
+
+.our-doctors img {
+  width: 350px;
+}
+
+.our-doctors .title {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.377);
+  /* color: var(--secondary); */
+  color: white;
+  width: 100%;
+  padding: 1.5rem;
+  /* margin-top: -50px; */
+  z-index: 500;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Contact */
+#contact .info {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact .info .item {
+  text-align: center;
+  padding: 1rem;
+}
+
+#contact .info .item i {
+  color: var(--primary);
+}
+
+#contact .info .item p {
+  margin-top: 1rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.089);
+  margin-top: 4rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.socials a {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.socials i.fa-facebook-f {
+  color: #365397;
+}
+
+.socials i.fa-youtube {
+  color: #ff3333;
+}
+
+.socials i.fa-twitter {
+  color: #00a9f1;
+}
+
+.socials i.fa-vimeo-v {
+  color: #48b6ed;
+}
+
+.copy-right {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+/* Maps */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 80%;
+  margin: 4rem auto 0 auto;
+  border-radius: 0.5rem;
+  /* The width is the width of the web page */
+}
